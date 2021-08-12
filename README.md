@@ -1,6 +1,6 @@
 ## 🚀 Quick start 
 
-1.  **Clore repository.**
+1.  **Clone repository.**
 
 2.  **Install dependencies.**
 
