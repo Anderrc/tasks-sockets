@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Crud webSockets</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./main.css" />
+    </head>
+    <body>
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-4 my-auto">
+                    <form id="noteForm" class="card card-body rounded-0">
+                        <h2 class="h3 mb-5">Add a note</h2>
+                        <input
+                            type="text"
+                            name="title"
+                            id="title"
+                            placeholder="write a title"
+                            class="form-control rounded-0 mb-3"
+                            autofocus
+                        />
+                        <textarea
+                            name="description"
+                            id="description"
+                            class="form-control rounded-0 mb-3"
+                            placeholder="write a description"
+                        ></textarea>
+
+                        <button class="btn btn-dark rounded-0">
+                            send
+                        </button>
+                    </form>
+                </div>
+                <div class="col-md-8">
+                    <h2 class="h3 mb-3 mt-3">Notes</h2>
+                    <div id="notes"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./socket.io/socket.io.min.js"></script>
+        <script src="./ui.js"></script>
+        <script src="./socket.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
